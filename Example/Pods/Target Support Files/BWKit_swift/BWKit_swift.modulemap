@@ -1,0 +1,6 @@
+framework module BWKit_swift {
+  umbrella header "BWKit_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

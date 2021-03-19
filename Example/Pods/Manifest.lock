@@ -1,0 +1,16 @@
+PODS:
+  - BWKit_swift (0.1.0)
+
+DEPENDENCIES:
+  - BWKit_swift (from `../`)
+
+EXTERNAL SOURCES:
+  BWKit_swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BWKit_swift: 9b4e79d565128155b35525c8f51a99e1dd5b2b3c
+
+PODFILE CHECKSUM: acdaff525df5cdc30e523a82ea51d7a715dc2c6d
+
+COCOAPODS: 1.10.1

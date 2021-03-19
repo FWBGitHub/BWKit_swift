@@ -1,15 +1,62 @@
 PODS:
-  - BWKit_swift (0.1.0)
+  - BWKit_swift (0.1.1):
+    - IQKeyboardManagerSwift
+    - RTRootNavigationController
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SwiftyRSA
+    - SwiftyUserDefaults
+    - YYKit
+  - IQKeyboardManagerSwift (6.5.6)
+  - RTRootNavigationController (0.7.2):
+    - RTRootNavigationController/Core (= 0.7.2)
+  - RTRootNavigationController/Core (0.7.2)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - SnapKit (4.2.0)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
+  - SwiftyUserDefaults (5.3.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - BWKit_swift (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - RTRootNavigationController
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftyRSA
+    - SwiftyUserDefaults
+    - YYKit
 
 EXTERNAL SOURCES:
   BWKit_swift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BWKit_swift: 9b4e79d565128155b35525c8f51a99e1dd5b2b3c
+  BWKit_swift: ab901057c34e8c8ec0763994a22cc6906781a3f6
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
 PODFILE CHECKSUM: acdaff525df5cdc30e523a82ea51d7a715dc2c6d
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreTelephony
 enum BWDeviceType:Int {
     case BW_UNKNOWN = 0
     case BW_iPhone4             //iPhone4、iPhone4S
@@ -100,5 +101,18 @@ public extension BWSpace where Base:UIDevice{
     ///获取系统版本
     static var systemVersionStr:String{
         return UIDevice.current.systemVersion
+    }
+    ///获取移动网络code
+    static var mobileNetworkCode:String{
+        let info = CTTelephonyNetworkInfo()
+        let carrier = info.subscriberCellularProvider
+        guard carrier != nil else {
+            return ""
+        }
+        let code = carrier?.mobileNetworkCode
+        guard code?.bw.isBlank == false else {
+            return ""
+        }
+        return code ?? ""
     }
 }

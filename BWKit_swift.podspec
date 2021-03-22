@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.2'
+    s.version          = '0.1.3'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     
     s.source_files = 'BWKit_swift/Classes/**/*'
-    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64'  }
 
     # s.resource_bundles = {
     #   'BWKit_swift' => ['BWKit_swift/Assets/*.png']
@@ -46,6 +46,5 @@ Pod::Spec.new do |s|
     s.dependency 'RxSwift'
     s.dependency 'RxCocoa'
     s.dependency 'IQKeyboardManagerSwift'
-    s.dependency 'SwiftyUserDefaults'
     s.dependency 'SwiftyRSA'
 end

@@ -4,6 +4,8 @@
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#pod spec lint --allow-warnings
+#pod trunk push --allow-warnings --verbose
 #
 
 Pod::Spec.new do |s|
@@ -30,7 +32,7 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '9.0'
     
-    s.source_files = 'BWKit_swift/Classes/**/*'
+#    s.source_files = 'BWKit_swift/Classes/**/*'
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64'  }
 
     # s.resource_bundles = {
@@ -47,4 +49,14 @@ Pod::Spec.new do |s|
     s.dependency 'RxCocoa'
     s.dependency 'IQKeyboardManagerSwift'
     s.dependency 'SwiftyRSA'
+    s.subspec 'Custom' do |ss|
+        ss.source_files = 'BWKit_swift/Classes/Custom/*'
+    end
+    s.subspec 'Extensions' do |ss|
+        ss.source_files = 'BWKit_swift/Classes/Extensions/*'
+    end
+    s.subspec 'Const' do |ss|
+        ss.source_files = 'BWKit_swift/Classes/Const/*'
+    end
+    
 end

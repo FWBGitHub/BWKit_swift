@@ -379,7 +379,9 @@
 		A0C918A8E50A533418F3D08B31334E72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4218FF1C0E926BFC127D575FCA0A89E5 /* Foundation.framework */; };
 		A1404ADFBF02DE97F6FD26FBE25621AF /* _YYWebImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = A5728A088F309124F238E2C4D93E8A73 /* _YYWebImageSetter.m */; };
 		A14FE10CDC4746401873841033E553E1 /* SwiftyRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BECA559CDE86D3B8B3838E3C1B3A5A /* SwiftyRSA.swift */; };
-		A18977ED260AEC9000DC2C31 /* BWPublicConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18977EC260AEC9000DC2C31 /* BWPublicConst.swift */; };
+		A1897805260B3DC200DC2C31 /* BWPublicConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1897804260B3DC200DC2C31 /* BWPublicConst.swift */; };
+		A1897973260DB28600DC2C31 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1897971260DB28600DC2C31 /* BaseViewController.swift */; };
+		A1897974260DB28600DC2C31 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1897972260DB28600DC2C31 /* BaseNavigationViewController.swift */; };
 		A3EC2E07513BC3B3AD251980A58F4955 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B13A22E7C7428C709D888D28F69D139D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A43EC18169CEA0A47CA574321918F6FC /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7956EAD0D26DCED5434053A707A3A64B /* Disposables.swift */; };
 		A4DE421A3E637A250218B2FB26AC382A /* RxCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C00B17C5A1C4AADF2BD4797216C5F22 /* RxCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1137,7 +1139,9 @@
 		A061D19AC24D9DC638EC080BC019C039 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
 		A08CC079DE8FB08873BF0EB313BB52E8 /* NSObject+YYAddForKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForKVO.h"; path = "YYKit/Base/Foundation/NSObject+YYAddForKVO.h"; sourceTree = "<group>"; };
 		A18110C99B751016BBC51AE62A096DEC /* ControlProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlProperty.swift; path = RxCocoa/Traits/ControlProperty.swift; sourceTree = "<group>"; };
-		A18977EC260AEC9000DC2C31 /* BWPublicConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWPublicConst.swift; sourceTree = "<group>"; };
+		A1897804260B3DC200DC2C31 /* BWPublicConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWPublicConst.swift; path = BWKit_swift/Classes/BWPublicConst.swift; sourceTree = "<group>"; };
+		A1897971260DB28600DC2C31 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A1897972260DB28600DC2C31 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		A2627774920C924BAE3F09B92B58F931 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BFA17D71ABBFDF49574783EE4D36D3 /* UITableView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Rx.swift"; path = "RxCocoa/iOS/UITableView+Rx.swift"; sourceTree = "<group>"; };
 		A33B57ABF799931DEA3FAEFEF3132637 /* OperationQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationQueueScheduler.swift; path = RxSwift/Schedulers/OperationQueueScheduler.swift; sourceTree = "<group>"; };
@@ -2084,8 +2088,9 @@
 		798124374D675ABB0D90735C8B39B7C1 /* BWKit_swift */ = {
 			isa = PBXGroup;
 			children = (
+				A1897970260DB28600DC2C31 /* Base */,
+				A1897804260B3DC200DC2C31 /* BWPublicConst.swift */,
 				70BF533EDB5BF0A24F9F3CE47955142A /* BWKit.swift */,
-				A18977EB260AEC9000DC2C31 /* Const */,
 				27354FA52F94254317E4BD256943F61C /* Custom */,
 				A097DF8115EAEE7D071D47CEB2EFA05E /* Extensions */,
 				9F4E3969CDC466969F255DAE644B8970 /* Pod */,
@@ -2144,13 +2149,14 @@
 			path = BWKit_swift/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		A18977EB260AEC9000DC2C31 /* Const */ = {
+		A1897970260DB28600DC2C31 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A18977EC260AEC9000DC2C31 /* BWPublicConst.swift */,
+				A1897971260DB28600DC2C31 /* BaseViewController.swift */,
+				A1897972260DB28600DC2C31 /* BaseNavigationViewController.swift */,
 			);
-			name = Const;
-			path = BWKit_swift/Classes/Const;
+			name = Base;
+			path = BWKit_swift/Classes/Base;
 			sourceTree = "<group>";
 		};
 		A943F3B19E4892B6E59D3CDB2F6157C5 /* Support Files */ = {
@@ -3308,9 +3314,11 @@
 				C9ECB68B23923FBFEF79A813A0556D68 /* UIButton+BWExtensions.swift in Sources */,
 				1F2C007C0A73BA7B11AF07A781D75E2A /* UIColor+BWExtensions.swift in Sources */,
 				DDC95F12A64AF9E8E7BCEF91ADEBAB65 /* UIFont+BWExtensions.swift in Sources */,
-				A18977ED260AEC9000DC2C31 /* BWPublicConst.swift in Sources */,
+				A1897805260B3DC200DC2C31 /* BWPublicConst.swift in Sources */,
+				A1897974260DB28600DC2C31 /* BaseNavigationViewController.swift in Sources */,
 				83DF129AB04F63C1C430FC5176BF8156 /* UIImage+BWExtensions.swift in Sources */,
 				AE0C0E93C9A912FA564ED36B422772B0 /* UILabel+BWExtensions.swift in Sources */,
+				A1897973260DB28600DC2C31 /* BaseViewController.swift in Sources */,
 				DC40E9B74436C5052186C9B5103C18B9 /* UITextField+BWExtensions.swift in Sources */,
 				7545CAEC23A27127C3C0C152FC42EF5A /* UIView+BWExtensions.swift in Sources */,
 			);

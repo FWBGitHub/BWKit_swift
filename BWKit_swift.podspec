@@ -10,7 +10,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.4'
+    s.version          = '0.1.5'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -32,16 +32,15 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '9.0'
     
-#    s.source_files = 'BWKit_swift/Classes/**/*'
+    s.source_files = 'BWKit_swift/Classes/*'
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64'  }
+    s.source_files = 'BWKit_swift/Classes/**/*'
 
     # s.resource_bundles = {
     #   'BWKit_swift' => ['BWKit_swift/Assets/*.png']
     # }
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
-    # s.frameworks = 'UIKit', 'MapKit'
-    # s.dependency 'AFNetworking', '~> 2.3'
     s.dependency 'SnapKit'
     s.dependency 'RTRootNavigationController'
     s.dependency 'YYKit'
@@ -49,14 +48,20 @@ Pod::Spec.new do |s|
     s.dependency 'RxCocoa'
     s.dependency 'IQKeyboardManagerSwift'
     s.dependency 'SwiftyRSA'
-    s.subspec 'Custom' do |ss|
-        ss.source_files = 'BWKit_swift/Classes/Custom/*'
-    end
-    s.subspec 'Extensions' do |ss|
-        ss.source_files = 'BWKit_swift/Classes/Extensions/*'
-    end
-    s.subspec 'Const' do |ss|
-        ss.source_files = 'BWKit_swift/Classes/Const/*'
-    end
+#    s.subspec 'Extensions' do |ss|
+#        ss.source_files = 'BWKit_swift/Classes/Extensions/**/*'
+#        ss.dependency 'BWKit_swift/Const'
+#    end
+#    s.subspec 'Const' do |ss|
+#        ss.source_files = 'BWKit_swift/Classes/Const/**/*'
+#        ss.dependency 'BWKit_swift/Extensions'
+#    end
+#    s.subspec 'Custom' do |ss|
+#        ss.source_files = 'BWKit_swift/Classes/Custom/**/*'
+#        ss.dependency 'BWKit_swift/Extensions'
+#        ss.dependency 'BWKit_swift/Const'
+#    end
+
+
     
 end

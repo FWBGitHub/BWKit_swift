@@ -60,7 +60,7 @@ public extension BWSpace where Base:UIDevice{
     }
     static func isIPhoneX_After() -> Bool{
         if #available(iOS 11.0, *) {
-            return (UIApplication.shared.keyWindow?.safeAreaInsets.bottom)! > 0.0
+            return ((UIApplication.shared.windows.first?.safeAreaInsets.bottom)!) > 0.0
         }
         return false;
     }

@@ -20,7 +20,13 @@ public extension String{
     }
 }
 public extension BWSpace where Base == String{
-    /*计算文本宽、高*/
+    ///数字千分位分隔
+    func getMoneyDecimalStyle() -> String{
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return "\(formatter.string(from: NSNumber(value: Float(self.base) ?? 0)) ?? "")"
+    }
+    ///计算文本宽、高
     func calculateWithFont(textFont:AnyObject,maxWidth:CGFloat) -> CGSize{
         var attributes:[NSAttributedString.Key:AnyObject]
         if textFont.isKind(of: UIFont.self){

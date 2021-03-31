@@ -33,5 +33,19 @@ public extension BWSpace where Base:UIImage{
         UIGraphicsEndImageContext()
         return newImage!
     }
-  
+    
+}
+public extension NSObject{
+    ///获取bundle图片
+    func imageName(_ name:String) -> UIImage{
+        let currentBundle = Bundle(for: self.classForCoder)
+        let dict = currentBundle.infoDictionary
+        let bundleName = dict?["CFBundleName"]
+        let scale:Int = Int(UIScreen.main.scale)
+        let imageName = "\(name)@\(scale)x"
+        let bundleNamePath = "\(bundleName ?? "").bundle"
+        let bundlePath = currentBundle.resourcePath?.appending("/\(bundleNamePath)") ?? ""
+        let resource_bundle = Bundle(path: bundlePath)
+        return UIImage(named: imageName, in: resource_bundle, compatibleWith: nil) ?? UIImage()
+    }
 }

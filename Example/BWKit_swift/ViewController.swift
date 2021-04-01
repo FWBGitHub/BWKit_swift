@@ -12,14 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let str = "我的<font color = '#B8DF57'>sb</font>"
-        let att = NSMutableAttributedString(str, textFont: UIFont.bw.font(22, weight: .bold), textColorHex: "#82abee")
-        let label = UILabel(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        label.attributedText = att
-        view.addSubview(label)
-        let temp = NSAttributedString(imageName(""), rect: .zero)
-         let size = att.bw.computeSizeWithFont(UIFont.bw.font_regular(12))
-        print("size=\(size)")
+        let imageView = UIImageView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        view.addSubview(imageView)
+        imageView.bw.imageUrlString("http://pcdd-app.oss-cn-hangzhou.aliyuncs.com/advimg/20200716/2020071610241605796429.jpg") { (image) in
+            print("image=\(NSStringFromCGSize(image.size))")
+        }
     }
 
     override func didReceiveMemoryWarning() {

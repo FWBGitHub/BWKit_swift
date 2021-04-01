@@ -62,11 +62,3 @@ public extension BWSpace where Base == NSMutableAttributedString{
         return self.base.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, context: nil).size
     }
 }
-/*
-
-
--(void)bw_setFontsHorizontal:(CGFloat)minFontSize maxFontSize:(CGFloat)maxFontSize range:(NSRange)range{
-    CGFloat fontRatio = 0.16;
-    [self addAttributes:@{NSBaselineOffsetAttributeName:@(fontRatio * (maxFontSize - minFontSize))} range:range];
-}
- */

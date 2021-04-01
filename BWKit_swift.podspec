@@ -6,15 +6,12 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #pod spec lint --allow-warnings
 #pod trunk push --allow-warnings --verbose
-#增加：1、字符串千分位
-#     2、富文本封装
-#     3、html富文本封装
-#    5.RxDataSources
+#增加：1、kingfisher
 #
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.7'
+    s.version          = '0.1.8'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -53,6 +50,7 @@ Pod::Spec.new do |s|
     s.dependency 'RxDataSources'
     s.dependency 'IQKeyboardManagerSwift'
     s.dependency 'SwiftyRSA'
+    s.dependency 'Kingfisher'
     
 #    s.subspec 'Extensions' do |ss|
 #        ss.source_files = 'BWKit_swift/Classes/Extensions/**/*'

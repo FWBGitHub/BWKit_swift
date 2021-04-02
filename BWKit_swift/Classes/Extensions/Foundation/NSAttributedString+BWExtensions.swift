@@ -34,26 +34,26 @@ public extension NSMutableAttributedString{
             html = "<font color = '\(textColorHex)'>\(htmlText)</font>"
         }
         try! self.init(data: html.data(using: String.Encoding.utf16)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
-        self.addAttributes([NSAttributedStringKey.font:textFont], range: NSRange(location: 0, length: self.length ))
+        self.addAttributes([NSAttributedString.Key.font:textFont], range: NSRange(location: 0, length: self.length ))
     }
 
 }
 public extension BWSpace where Base == NSMutableAttributedString{
     func textColor(_ color:UIColor , rang:NSRange){
-        self.base.addAttributes([NSAttributedStringKey.foregroundColor:color], range: rang)
+        self.base.addAttributes([NSAttributedString.Key.foregroundColor:color], range: rang)
     }
     func font(_ font:UIFont , rang:NSRange){
-        self.base.addAttributes([NSAttributedStringKey.font:font], range: rang)
+        self.base.addAttributes([NSAttributedString.Key.font:font], range: rang)
     }
     func lineSpacing(_ lineSpace:CGFloat) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpace
-        self.base.addAttributes([NSAttributedStringKey.paragraphStyle:paragraphStyle], range:NSRange(location: 0, length: self.base.length))
+        self.base.addAttributes([NSAttributedString.Key.paragraphStyle:paragraphStyle], range:NSRange(location: 0, length: self.base.length))
     }
     func fontsHorizontal(_ minFontSize:CGFloat , maxFontSize:CGFloat ,range:NSRange){
         let fontRatio:CGFloat = 0.16
         let offset:CGFloat = fontRatio * (maxFontSize - minFontSize)
-        self.base.addAttributes([NSAttributedStringKey.baselineOffset:(offset)], range: range)
+        self.base.addAttributes([NSAttributedString.Key.baselineOffset:(offset)], range: range)
     }
     ///富文本计算size
     func computeSizeWithFont(_ font:UIFont) -> CGSize {

@@ -1,17 +1,17 @@
 PODS:
-  - BWKit_swift (0.1.8):
-    - IQKeyboardManagerSwift
-    - Kingfisher
-    - RTRootNavigationController
-    - RxCocoa
-    - RxDataSources
-    - RxSwift
-    - SnapKit
-    - SwiftyRSA
-    - YYKit
+  - BWKit_swift (0.1.9):
+    - IQKeyboardManagerSwift (= 6.5.6)
+    - Kingfisher (= 6.2.1)
+    - RTRootNavigationController (= 0.7.2)
+    - RxCocoa (= 6.1.0)
+    - RxDataSources (= 5.0.0)
+    - RxSwift (= 6.1.0)
+    - SnapKit (= 4.2.0)
+    - SwiftyRSA (= 1.5.0)
+    - YYKit (= 1.0.9)
   - Differentiator (5.0.0)
   - IQKeyboardManagerSwift (6.5.6)
-  - Kingfisher (4.10.1)
+  - Kingfisher (6.2.1)
   - RTRootNavigationController (0.7.2):
     - RTRootNavigationController/Core (= 0.7.2)
   - RTRootNavigationController/Core (0.7.2)
@@ -55,10 +55,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BWKit_swift: 15ac9bc9727892c9996ca3d5eef7019cb70444b2
+  BWKit_swift: bd665ae9ce2af57a3ffa846c9829c06c796bba85
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
@@ -68,6 +68,6 @@ SPEC CHECKSUMS:
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: acdaff525df5cdc30e523a82ea51d7a715dc2c6d
+PODFILE CHECKSUM: 7ae2bc8cec66c6e30a2d4daefd9e88185a205f22
 
 COCOAPODS: 1.10.1

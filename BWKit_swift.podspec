@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
     s.dependency 'IQKeyboardManagerSwift','6.5.6'
     s.dependency 'SwiftyRSA','1.5.0'
     s.dependency 'Kingfisher','6.2.1'
-    
+    s.swift_versions = '4.0'
 #    s.subspec 'Extensions' do |ss|
 #        ss.source_files = 'BWKit_swift/Classes/Extensions/**/*'
 #        ss.dependency 'BWKit_swift/Const'

@@ -25,13 +25,14 @@ public extension BWSpace where Base:UIImageView{
         guard !urlStr.bw.isBlank else {
             return
         }
-        self.base.kf.setImage(with: URL(string: urlStr), placeholder: nil, options: nil, progressBlock: nil) { (image, error, cacheType, url) in
-            guard let image = image else{
-                return
+        self.base.kf.setImage(with: URL(string: urlStr), placeholder: nil, options: nil, progressBlock: nil) { (result) in
+            switch result{
+            case .success(let value):
+                complete(value.image)
+            case .failure(let value):
+                BWPrint("图片请求失败=\(value.localizedDescription)")
             }
-            complete(image)
         }
-
     }
 }
 

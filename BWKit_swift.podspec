@@ -11,7 +11,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.8'
+    s.version          = '0.1.9'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://e.coding.net/yt_ios/BWKit/BWkit_swift.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     
-    s.ios.deployment_target = '9.0'
+    s.ios.deployment_target = '10.0'
     
     s.source_files = 'BWKit_swift/Classes/*'
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64'  }
@@ -42,15 +42,15 @@ Pod::Spec.new do |s|
     # }
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.dependency 'SnapKit'
-    s.dependency 'RTRootNavigationController'
-    s.dependency 'YYKit'
-    s.dependency 'RxSwift'
-    s.dependency 'RxCocoa'
-    s.dependency 'RxDataSources'
-    s.dependency 'IQKeyboardManagerSwift'
-    s.dependency 'SwiftyRSA'
-    s.dependency 'Kingfisher'
+    s.dependency 'SnapKit', '4.2.0'
+    s.dependency 'RTRootNavigationController','0.7.2'
+    s.dependency 'YYKit','1.0.9'
+    s.dependency 'RxSwift','6.1.0'
+    s.dependency 'RxCocoa','6.1.0'
+    s.dependency 'RxDataSources','5.0.0'
+    s.dependency 'IQKeyboardManagerSwift','6.5.6'
+    s.dependency 'SwiftyRSA','1.5.0'
+    s.dependency 'Kingfisher','6.2.1'
     
 #    s.subspec 'Extensions' do |ss|
 #        ss.source_files = 'BWKit_swift/Classes/Extensions/**/*'

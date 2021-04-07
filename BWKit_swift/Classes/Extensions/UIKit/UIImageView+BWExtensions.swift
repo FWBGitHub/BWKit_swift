@@ -6,7 +6,6 @@
 //
 
 import UIKit
-//import YYKit
 import Kingfisher
 public extension BWSpace where Base:UIImageView{
     func imageUrlString(_ urlStr:String){

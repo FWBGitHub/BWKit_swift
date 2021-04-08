@@ -11,7 +11,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.10'
+    s.version          = '0.1.11'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -45,9 +45,9 @@ Pod::Spec.new do |s|
     s.dependency 'SnapKit', '4.2.0'
     s.dependency 'RTRootNavigationController','0.7.2'
     s.dependency 'YYKit','1.0.9'
-    s.dependency 'RxSwift','6.1.0'
-    s.dependency 'RxCocoa','6.1.0'
-    s.dependency 'RxDataSources','5.0.0'
+    s.dependency 'RxSwift'
+    s.dependency 'RxCocoa'
+    s.dependency 'RxDataSources'
     s.dependency 'IQKeyboardManagerSwift','6.5.6'
     s.dependency 'SwiftyRSA','1.5.0'
     s.dependency 'Kingfisher','6.2.1'

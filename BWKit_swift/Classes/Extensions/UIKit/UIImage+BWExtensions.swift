@@ -36,7 +36,7 @@ public extension BWSpace where Base:UIImage{
     
 }
 public extension NSObject{
-    ///获取bundle图片
+    ///获取当前bundle图片
     func imageName(_ name:String) -> UIImage{
         let currentBundle = Bundle(for: self.classForCoder)
         let dict = currentBundle.infoDictionary
@@ -44,6 +44,25 @@ public extension NSObject{
         let scale:Int = Int(UIScreen.main.scale)
         let imageName = "\(name)@\(scale)x"
         let bundleNamePath = "\(bundleName ?? "").bundle"
+        let bundlePath = currentBundle.resourcePath?.appending("/\(bundleNamePath)") ?? ""
+        let resource_bundle = Bundle(path: bundlePath)
+        return UIImage(named: imageName, in: resource_bundle, compatibleWith: nil) ?? UIImage()
+    }
+    ///获取指定bundle图片
+    func imageName(_ name:String,_ bundle:String) -> UIImage{
+        let currentBundle = Bundle(for: self.classForCoder)
+        let scale:Int = Int(UIScreen.main.scale)
+        let imageName = "\(name)@\(scale)x"
+        let bundleNamePath = "\(bundle).bundle"
+        let bundlePath = currentBundle.resourcePath?.appending("/\(bundleNamePath)") ?? ""
+        let resource_bundle = Bundle(path: bundlePath)
+        return UIImage(named: imageName, in: resource_bundle, compatibleWith: nil) ?? UIImage()
+    }
+    ///获取指定bundle图片,不区分2x,3x
+    func imageNameNormal(_ name:String,_ bundle:String) -> UIImage{
+        let currentBundle = Bundle(for: self.classForCoder)
+        let imageName = "\(name)"
+        let bundleNamePath = "\(bundle).bundle"
         let bundlePath = currentBundle.resourcePath?.appending("/\(bundleNamePath)") ?? ""
         let resource_bundle = Bundle(path: bundlePath)
         return UIImage(named: imageName, in: resource_bundle, compatibleWith: nil) ?? UIImage()

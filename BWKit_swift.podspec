@@ -6,12 +6,13 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #pod spec lint --allow-warnings
 #pod trunk push --allow-warnings --verbose
-#增加：1、kingfisher
+#增加：1、MLeaksFinder
+ #   2、image分类增加方法
 #
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.11'
+    s.version          = '0.1.12'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -42,6 +43,7 @@ Pod::Spec.new do |s|
     # }
     
     # s.public_header_files = 'Pod/Classes/**/*.h'
+    s.swift_versions = '4.0'
     s.dependency 'SnapKit', '4.2.0'
     s.dependency 'RTRootNavigationController','0.7.2'
     s.dependency 'YYKit','1.0.9'
@@ -51,7 +53,8 @@ Pod::Spec.new do |s|
     s.dependency 'IQKeyboardManagerSwift','6.5.6'
     s.dependency 'SwiftyRSA','1.5.0'
     s.dependency 'Kingfisher','6.2.1'
-    s.swift_versions = '4.0'
+    s.dependency 'MLeaksFinder'
+
 #    s.subspec 'Extensions' do |ss|
 #        ss.source_files = 'BWKit_swift/Classes/Extensions/**/*'
 #        ss.dependency 'BWKit_swift/Const'

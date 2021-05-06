@@ -1,7 +1,8 @@
 PODS:
-  - BWKit_swift (0.1.11):
+  - BWKit_swift (0.1.13):
     - IQKeyboardManagerSwift (= 6.5.6)
     - Kingfisher (= 6.2.1)
+    - MLeaksFinder
     - RTRootNavigationController (= 0.7.2)
     - RxCocoa
     - RxDataSources
@@ -10,8 +11,11 @@ PODS:
     - SwiftyRSA (= 1.5.0)
     - YYKit (= 1.0.9)
   - Differentiator (5.0.0)
+  - FBRetainCycleDetector (0.1.4)
   - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (6.2.1)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - RTRootNavigationController (0.7.2):
     - RTRootNavigationController/Core (= 0.7.2)
   - RTRootNavigationController/Core (0.7.2)
@@ -39,8 +43,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Differentiator
+    - FBRetainCycleDetector
     - IQKeyboardManagerSwift
     - Kingfisher
+    - MLeaksFinder
     - RTRootNavigationController
     - RxCocoa
     - RxDataSources
@@ -55,10 +61,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BWKit_swift: a4dbddc3356a66b41ff9f3d699b67e12f67e77ac
+  BWKit_swift: 490bd8a692c721c718b3c19753ff213f1ca538ba
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf

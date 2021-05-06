@@ -27,6 +27,7 @@ extension BWSpaceWrappable{
 
 extension NSObject:BWSpaceWrappable{}
 extension String:BWSpaceWrappable{}
+extension Data:BWSpaceWrappable{}
 
 public func BWPrint(_ item: @autoclosure () -> Any) {
     #if DEBUG

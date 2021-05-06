@@ -6,13 +6,13 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #pod spec lint --allow-warnings
 #pod trunk push --allow-warnings --verbose
-#增加：1、MLeaksFinder
- #   2、image分类增加方法
+#增加：1、Data->dict分类
+ #
 #
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.1.12'
+    s.version          = '0.1.13'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.

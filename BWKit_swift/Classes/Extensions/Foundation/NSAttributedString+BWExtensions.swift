@@ -33,8 +33,14 @@ public extension NSMutableAttributedString{
         if(textColorHex.count != 0){
             html = "<font color = '\(textColorHex)'>\(htmlText)</font>"
         }
-        try! self.init(data: html.data(using: String.Encoding.utf16)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
-        self.addAttributes([NSAttributedString.Key.font:textFont], range: NSRange(location: 0, length: self.length ))
+        do{
+            try self.init(data: html.data(using: String.Encoding.utf16)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+            self.addAttributes([NSAttributedString.Key.font:textFont], range: NSRange(location: 0, length: self.length ))
+        }catch _ {
+            self.init(string: html)
+            self.addAttributes([NSAttributedString.Key.font:textFont], range: NSRange(location: 0, length: self.length ))
+
+        }
     }
 
 }

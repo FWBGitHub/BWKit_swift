@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         imageView.bw.imageUrlString("http://pcdd-app.oss-cn-hangzhou.aliyuncs.com/advimg/20200716/2020071610241605796429.jpg") { (image) in
             print("image=\(NSStringFromCGSize(image.size))")
         }
+        print("class=\(imageView.bw.currentVc())")
     }
 
     override func didReceiveMemoryWarning() {

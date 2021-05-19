@@ -153,3 +153,17 @@ public extension BWSpace where Base:UIView{
         self.base.layer.insertSublayer(gradient, at: 0)
     }
 }
+public extension BWSpace where Base:UIView{
+    ///获取当前所在的vc
+    func currentVc()->UIViewController?{
+        for view in sequence(first: self.base.superview, next: {$0?.superview}){
+            if let responder = view?.next{
+                if responder.isKind(of: UIViewController.self){
+
+                    return responder as? UIViewController
+                }
+            }
+        }
+        return nil
+    }
+}

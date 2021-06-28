@@ -68,3 +68,30 @@ public extension NSObject{
         return UIImage(named: imageName, in: resource_bundle, compatibleWith: nil) ?? UIImage()
     }
 }
+public extension BWSpace where Base:UIImage{
+    static func getLaunchImage() -> String{
+        var viewOrientation = "Portrait"
+        if (UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation )) {
+            viewOrientation = "Landscape"
+        }
+        var launchImageName = ""
+        
+        let dict = Bundle.main.infoDictionary
+        if dict?.keys.contains("UILaunchImages") == false {
+            return ""
+        }
+        let imagesDict:Array<Dictionary<String,Any>> = dict?["UILaunchImages"] as! Array<Dictionary<String, Any>>
+        let currentWindow = UIApplication.shared.windows.first
+        let viewSize = currentWindow?.bounds.size ?? .zero
+        for dict in imagesDict
+        {
+            let imageSize = CGSizeFromString((dict["UILaunchImageSize"] as! String))
+            
+            if (imageSize.equalTo(viewSize) && viewOrientation == (dict["UILaunchImageOrientation"] as! String))
+            {
+                launchImageName = dict["UILaunchImageName"] as! String;
+            }
+        }
+        return launchImageName
+    }
+}

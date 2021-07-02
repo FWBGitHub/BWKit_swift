@@ -95,6 +95,9 @@ public class BWTimeDownButton: UIButton {
         self.isEnabled = false
     }
     public func startTimeDown(){
+        guard self.isEnabled else {
+            return
+        }
         let normalColor = self.titleColor(for: .normal)
         let normalTitle = self.title(for: .normal)
         let disableColor:UIColor = stateDict[BWTimeDownStateKey.BWTimeDowning_titleColor] as! UIColor
@@ -141,6 +144,7 @@ public class BWTimeDownButton: UIButton {
                 timeOut -= 1
             }
         }
+        timer?.resume()
     }
     func getDisableAttrbute(time:String) -> NSMutableAttributedString{
         var disableTitle:String = self.stateDict[BWTimeDownStateKey.BWTimeDowning_title] as! String

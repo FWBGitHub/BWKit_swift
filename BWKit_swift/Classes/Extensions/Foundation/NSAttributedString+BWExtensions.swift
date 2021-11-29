@@ -15,7 +15,11 @@ public extension NSAttributedString{
         att.bounds = rect
         self.init(attachment: att)
     }
-
+    ///图片-->富文本，图片与文字对齐
+    convenience init(_ image:UIImage ,_ rect:CGRect,_ font:UIFont) {
+        let paddingTop = font.lineHeight - font.pointSize
+        self.init(image, rect: CGRect(x: rect.origin.x, y: -paddingTop, width: rect.size.width, height: rect.size.height))
+    }
 
 }
 public extension BWSpace where Base == NSAttributedString{

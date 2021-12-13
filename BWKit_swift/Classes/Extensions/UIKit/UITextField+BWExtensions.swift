@@ -28,4 +28,8 @@ extension UITextField {
             self.text = String(str[..<str.index(str.startIndex, offsetBy: textField.bw_limitNumber)])
         }
     }
+    public func setPlacherColor(_ color:UIColor,_ placher:String){
+        attributedPlaceholder = NSAttributedString(string: placher, attributes: [NSAttributedString.Key.foregroundColor:color])
+    }
+
 }

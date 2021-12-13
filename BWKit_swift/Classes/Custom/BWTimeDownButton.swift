@@ -49,6 +49,8 @@ public class BWTimeDownButton: UIButton {
             
         }
     }
+    ///倒计时单位
+    public var timeUnit:String = ""
     public func bw_setTitle(_ title:String,timeDownstate:BWTimeDownType){
         switch timeDownstate {
         case .BWTimeDownNormal:
@@ -132,7 +134,7 @@ public class BWTimeDownButton: UIButton {
                 }
             }else{
                 let seconds = timeOut % 61
-                let timeStr = "\(seconds)s"
+                let timeStr = "\(seconds)\(timeUnit)"
                 DispatchQueue.main.async { [self] in
                     if(self.timeColor != nil){
                         self.setAttributedTitle(getDisableAttrbute(time: timeStr), for: .disabled)

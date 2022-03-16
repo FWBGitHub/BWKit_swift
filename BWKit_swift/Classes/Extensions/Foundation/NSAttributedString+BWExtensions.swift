@@ -25,9 +25,12 @@ public extension NSAttributedString{
 public extension BWSpace where Base == NSAttributedString{
     ///富文本计算size
     func computeSizeWithFont(_ font:UIFont) -> CGSize {
+        return self.computeSizeWithFont(font, CGFloat(MAXFLOAT))
+    }
+    func computeSizeWithFont(_ font:UIFont,_ max_width:CGFloat) -> CGSize{
         //swift不支持枚举多选
 //        let options : NSStringDrawingOptions = .UsesLineFragmentOrigin | .UsesFontLeading
-        return self.base.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, context: nil).size
+        return self.base.boundingRect(with: CGSize(width: max_width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, context: nil).size
     }
 }
 public extension NSMutableAttributedString{
@@ -67,8 +70,11 @@ public extension BWSpace where Base == NSMutableAttributedString{
     }
     ///富文本计算size
     func computeSizeWithFont(_ font:UIFont) -> CGSize {
+        return self.computeSizeWithFont(font, CGFloat(MAXFLOAT))
+    }
+    func computeSizeWithFont(_ font:UIFont,_ max_width:CGFloat) -> CGSize{
         //swift不支持枚举多选
 //        let options : NSStringDrawingOptions = .UsesLineFragmentOrigin | .UsesFontLeading
-        return self.base.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, context: nil).size
+        return self.base.boundingRect(with: CGSize(width: max_width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, context: nil).size
     }
 }

@@ -18,6 +18,13 @@ class ViewController: UIViewController {
             print("image=\(NSStringFromCGSize(image.size))")
         }
         print("class=\(imageView.bw.currentVc())")
+        let test_layer = CATextLayer()
+        test_layer.frame = CGRect(x: 20, y: 20, width: 100, height: 100)
+        test_layer.bw.textFont(UIFont.systemFont(ofSize: 30.0))
+        test_layer.string = "123"
+        test_layer.foregroundColor = UIColor.blue.cgColor
+        view.layer.addSublayer(test_layer)
+        print("layer=\(test_layer.bw.x),\(test_layer.bw.max_x)")
     }
 
     override func didReceiveMemoryWarning() {

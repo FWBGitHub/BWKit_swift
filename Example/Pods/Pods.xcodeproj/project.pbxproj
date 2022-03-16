@@ -443,6 +443,7 @@
 		A14B1E3D1C71EFD8E6864F269CA482DC /* BWHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F4813569DC548F84B09ADF56711BEB /* BWHudView.swift */; };
 		A14DB66265D2F88D3DDF7AAA93F77326 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3822020FA0DE30D0FCAD86269F11BBD8 /* ConstraintLayoutGuide.swift */; };
 		A1889ACD2509C9E78418E5D4A787F502 /* RxTabBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE90AE41184BF06831E2C39ECE3D21 /* RxTabBarDelegateProxy.swift */; };
+		A1B696D127E1C9E900CC7D99 /* CALayer+BWExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B696D027E1C9E800CC7D99 /* CALayer+BWExtensions.swift */; };
 		A2DF9B99188FDF0829B949D480E5DD03 /* RxPickerViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CE8A2CEE83B2A5E4347BC6EA15402 /* RxPickerViewDelegateProxy.swift */; };
 		A2EC370B847409B77B5F3A2BF0C7D750 /* SkipUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BBA8A8C721543B9C9EE394B97263BB /* SkipUntil.swift */; };
 		A31CDEAF642053D15BAEF81D6B9E71B7 /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7014083E5F5FE1B37AC4DF2F094BEAE4 /* YYTextRubyAnnotation.m */; };
@@ -1341,6 +1342,7 @@
 		A09D388DBB133B610E9938CAE302BFC7 /* SingleAssignmentDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleAssignmentDisposable.swift; path = RxSwift/Disposables/SingleAssignmentDisposable.swift; sourceTree = "<group>"; };
 		A114862F38BD8B2E7B35A0993A328E4D /* Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rx.swift; path = RxSwift/Rx.swift; sourceTree = "<group>"; };
 		A1A4208C11396307F0C0B554AFADB444 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		A1B696D027E1C9E800CC7D99 /* CALayer+BWExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+BWExtensions.swift"; sourceTree = "<group>"; };
 		A20B41FFA863A33E9D3735BFD3DEA19D /* SectionModelType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionModelType.swift; path = Sources/Differentiator/SectionModelType.swift; sourceTree = "<group>"; };
 		A2465CA6A802A2A5DF67CDFB6A456E1D /* YYWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageManager.m; path = YYKit/Image/YYWebImageManager.m; sourceTree = "<group>"; };
 		A26CF9A78264B4732D2ABA70C98FC2B1 /* NSData+SHA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SHA.h"; path = "Source/NSData+SHA.h"; sourceTree = "<group>"; };
@@ -2823,6 +2825,7 @@
 				F0260BB3D22FD116953EBB69F86D781A /* UILabel+BWExtensions.swift */,
 				2CE374F2C1552201E8EF0FC58C3B0F7C /* UITextField+BWExtensions.swift */,
 				00901320D9E32828F909EBA79DF1E29B /* UIView+BWExtensions.swift */,
+				A1B696D027E1C9E800CC7D99 /* CALayer+BWExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -3855,6 +3858,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B696D127E1C9E900CC7D99 /* CALayer+BWExtensions.swift in Sources */,
 				D2FBC392745C8D8DBF221375B4516B63 /* BaseNavigationViewController.swift in Sources */,
 				65F4C73A4B11C7A68D06D6F3DF91DC77 /* BaseViewController.swift in Sources */,
 				A14B1E3D1C71EFD8E6864F269CA482DC /* BWHudView.swift in Sources */,

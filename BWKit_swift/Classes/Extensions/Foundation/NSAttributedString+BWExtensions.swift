@@ -69,12 +69,10 @@ public extension BWSpace where Base == NSMutableAttributedString{
         self.base.addAttributes([NSAttributedString.Key.baselineOffset:(offset)], range: range)
     }
     ///富文本计算size
-    func computeSizeWithFont(_ font:UIFont) -> CGSize {
-        return self.computeSizeWithFont(font, CGFloat(MAXFLOAT))
+    func computeSize() -> CGSize {
+        return self.computeSize( CGFloat(MAXFLOAT))
     }
-    func computeSizeWithFont(_ font:UIFont,_ max_width:CGFloat) -> CGSize{
-        //swift不支持枚举多选
-//        let options : NSStringDrawingOptions = .UsesLineFragmentOrigin | .UsesFontLeading
+    func computeSize(_ max_width:CGFloat) -> CGSize{
         return self.base.boundingRect(with: CGSize(width: max_width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, context: nil).size
     }
 }

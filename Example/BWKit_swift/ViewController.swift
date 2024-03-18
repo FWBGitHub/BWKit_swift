@@ -26,7 +26,9 @@ class ViewController: UIViewController {
         view.layer.addSublayer(test_layer)
         print("layer=\(test_layer.bw.x),\(test_layer.bw.max_x)")
     }
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        BWConst.window?.bw.showHint("12312")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -13,20 +13,20 @@ public extension BWSpace where Base:NSObject{
             showHintView(msg, addView: self.base as! UIView)
             return
         }
-        guard (UIApplication.shared.delegate?.window) != nil else {
+        guard (BWConst.window) != nil else {
             return
         }
-        showHintView(msg, addView: UIApplication.shared.delegate?.window as! UIView)
+        showHintView(msg, addView: BWConst.window)
     }
     ///弹窗 msg addView
     func showHint(_ msg:String , addView:UIView){
-        showHintView(msg, addView: UIApplication.shared.delegate?.window as! UIView)
+        showHintView(msg, addView: addView)
     }
-    private func showHintView(_ msg:String , addView:UIView){
+    private func showHintView(_ msg:String , addView:UIView?){
         guard !msg.isEmpty else {
             return
         }
-        addView.bw_showHudView(msg)
+        addView?.bw_showHudView(msg)
     }
     
     
@@ -55,7 +55,7 @@ private extension UIView{
                 }
             }
             
-            let view:UIView = self.isKind(of: UIResponder.classForCoder()) ? self: UIApplication.shared.delegate?.window as! UIView
+            let view:UIView = self.isKind(of: UIResponder.classForCoder()) ? self: BWConst.window!
             let contentView = UIView()
             
             contentView.backgroundColor = UIColor(0x000000, alpha: 0.5)

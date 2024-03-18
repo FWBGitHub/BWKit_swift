@@ -17,8 +17,7 @@ public struct BWConst{
     public static let Documents_Path = Home_Path+"/Documents"
     ///获得沙盒的Library路径
     public static let Library_Path = Home_Path+"/Library"
-    ///获得当前window
-    public static let window:UIView = (UIApplication.shared.delegate?.window)!!
+   
     ///状态栏高度
     public static let statusBarHeight:CGFloat = (UIDevice.bw.isIPhoneX_After() ? 44.0 : 20.0)
     ///导航栏高度
@@ -27,6 +26,23 @@ public struct BWConst{
     public static var statusNavHeight:CGFloat {statusBarHeight + navHeight}
     ///底部Tabbar高度
     public static let bottomBarHeight:CGFloat = (UIDevice.bw.isIPhoneX_After() ? 83.0 : 49.0)
+    ///获得当前window
+    public static let window:UIWindow? = {
+        var temp:UIWindow?
+        if #available(iOS 13, *) {
+            if #available(iOS 15, *) {
+                temp = UIApplication.shared.connectedScenes
+                            .map({ $0 as? UIWindowScene })
+                            .compactMap({ $0 })
+                            .first?.windows.first
+            }else{
+                temp = UIApplication.shared.windows.first
+            }
+        }else{
+            temp = UIApplication.shared.keyWindow
+        }
+        return temp
+    }()
 }
 public extension BWSpace where Base == BWConst{
 }

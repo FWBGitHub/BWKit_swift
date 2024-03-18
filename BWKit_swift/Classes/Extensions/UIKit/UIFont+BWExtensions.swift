@@ -29,9 +29,7 @@ public extension BWSpace where Base:UIFont{
     static func font_regular(_ x:CGFloat) -> UIFont{
         return font(x, weight: .regular)
     }
-    static func font_DINMedium(_ x:CGFloat) -> UIFont{
-        return fontName("DIN-Medium", x: x)
-    }
+   
 }
 
 

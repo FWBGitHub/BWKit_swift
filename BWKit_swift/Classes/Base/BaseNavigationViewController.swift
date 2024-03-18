@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import RTRootNavigationController
-open class BaseNavigationViewController: RTRootNavigationController {
+open class BaseNavigationViewController: UINavigationController {
 
     open override func viewDidLoad() {
         super.viewDidLoad()

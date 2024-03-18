@@ -1,73 +1,16 @@
 PODS:
-  - BWKit_swift (0.1.15):
-    - IQKeyboardManagerSwift (= 6.5.6)
-    - Kingfisher (= 6.2.1)
-    - RTRootNavigationController (= 0.7.2)
-    - RxCocoa
-    - RxDataSources
-    - RxSwift
-    - SnapKit (= 4.2.0)
-    - SwiftyRSA (= 1.5.0)
-    - YYKit (= 1.0.9)
-  - Differentiator (5.0.0)
-  - IQKeyboardManagerSwift (6.5.6)
-  - Kingfisher (6.2.1)
-  - RTRootNavigationController (0.7.2):
-    - RTRootNavigationController/Core (= 0.7.2)
-  - RTRootNavigationController/Core (0.7.2)
-  - RxCocoa (6.1.0):
-    - RxRelay (= 6.1.0)
-    - RxSwift (= 6.1.0)
-  - RxDataSources (5.0.0):
-    - Differentiator (~> 5.0)
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxRelay (6.1.0):
-    - RxSwift (= 6.1.0)
-  - RxSwift (6.1.0)
-  - SnapKit (4.2.0)
-  - SwiftyRSA (1.5.0):
-    - SwiftyRSA/ObjC (= 1.5.0)
-  - SwiftyRSA/ObjC (1.5.0)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - BWKit_swift (0.2.0)
 
 DEPENDENCIES:
   - BWKit_swift (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - Differentiator
-    - IQKeyboardManagerSwift
-    - Kingfisher
-    - RTRootNavigationController
-    - RxCocoa
-    - RxDataSources
-    - RxRelay
-    - RxSwift
-    - SnapKit
-    - SwiftyRSA
-    - YYKit
 
 EXTERNAL SOURCES:
   BWKit_swift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BWKit_swift: 78c0763d8251abc4178d55ba98b2aff53b6e1e57
-  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
-  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
-  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
-  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
-  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
-  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
-  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  BWKit_swift: 6fa011437b71625029fb90152f223d8d5f6bedaa
 
-PODFILE CHECKSUM: 7ae2bc8cec66c6e30a2d4daefd9e88185a205f22
+PODFILE CHECKSUM: f865dc7c5b124e9f058f3d55053fe9f59ea6cbbd
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.14.3

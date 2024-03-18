@@ -1,5 +1,4 @@
 import XCTest
-import BWKit_swift
 
 class Tests: XCTestCase {
     

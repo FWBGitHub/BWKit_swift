@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0255DDD8EC7369FD6E644AF2870672E2 /* BWPublicConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E77E2083AEAC09002085D1E67FEF /* BWPublicConst.swift */; };
 		05F18BF2457686C6DFACA4A32C98C320 /* NSStringPredicate+BWExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF695F95243C27E4093F72457E7FECC /* NSStringPredicate+BWExtensions.swift */; };
-		0761B08B9940BA1E13AFBB6FDC6D5EC8 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E83910B21284F716E7D338D9D076D1 /* BaseNavigationViewController.swift */; };
 		1033666B9F4F359AD8B0F81F8A49C613 /* UITextField+BWExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01FD1F5EA62B3AF59D8B9528E72110 /* UITextField+BWExtensions.swift */; };
 		11BB02B6EAAAC69523D6C18DBA8DD2A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		187DBDC388A3349676463E7324F93AFA /* NSObject+BWExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C0D84793D21D9285C8D040BF197610 /* NSObject+BWExtensions.swift */; };
@@ -84,7 +83,6 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73919775B9885899D0042D46D58F8670 /* Pods-BWKit_swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BWKit_swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		8ACB5E113E4A9975BE83742B28A8B203 /* Pods-BWKit_swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BWKit_swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		90E83910B21284F716E7D338D9D076D1 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		98B00DAC7F865F70D4A12666AAFEEAFA /* BWKit_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BWKit_swift.debug.xcconfig; sourceTree = "<group>"; };
 		9ABCFEB6858A7F9D145F519E71833E0B /* Data+BWExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+BWExtensions.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -297,7 +295,6 @@
 		C7EFD9E79C9DFEFFB87F20E0D8F7A0A4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				90E83910B21284F716E7D338D9D076D1 /* BaseNavigationViewController.swift */,
 				B9D5F6F232C3A673F79D6E8DE965A274 /* BaseViewController.swift */,
 			);
 			name = Base;
@@ -491,7 +488,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0761B08B9940BA1E13AFBB6FDC6D5EC8 /* BaseNavigationViewController.swift in Sources */,
 				E706352A1F5E2F50818C5B05BAEFA86A /* BaseViewController.swift in Sources */,
 				FA037B9D81E02A5AE1F3CC5E7E2CF769 /* BWHudView.swift in Sources */,
 				C2F4231C9BA73A3BFFDC08C1152CADF2 /* BWKit.swift in Sources */,

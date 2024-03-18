@@ -11,7 +11,6 @@ open class BaseViewController: UIViewController {
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        self.automaticallyAdjustsScrollViewInsets = false
         self.view.backgroundColor = .white;
 
     }

@@ -88,6 +88,10 @@ public extension BWSpace where Base:UIDevice{
     static var appName:String{
         return Bundle.main.infoDictionary?["CFBundleName"] as! String
     }
+    ///获取app DisplayName
+    static var appDisplayName:String{
+        return Bundle.main.infoDictionary?["CFBundleDisplayName"] as! String
+    }
     ///获取app版本传给后台
     static var appVersionNumber:String{
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String

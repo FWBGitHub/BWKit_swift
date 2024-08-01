@@ -11,7 +11,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'BWKit_swift'
-    s.version          = '0.2.1'
+    s.version          = '0.2.2'
     s.summary          = 'A short description of BWKit_swift.'
     
     # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'FWBGitHub' => '767830854@qq.com' }
-    s.source           = { :git => 'https://e.coding.net/yt_ios/BWKit/BWkit_swift.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://e.coding.net/yt_ios/BWKit/BWkit_swift.git', :tag => s.version.to_s }    
     
     s.ios.deployment_target = '11.0'
     s.source_files = 'BWKit_swift/Classes/*'

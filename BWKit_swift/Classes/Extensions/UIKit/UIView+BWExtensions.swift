@@ -129,6 +129,7 @@ public extension BWSpace where Base:UIView{
 public extension BWSpace where Base:UIView{
     ///添加点击事件
     func addTarget(target:Any? , action:Selector?){
+        self.base.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: target, action: action)
         self.base.addGestureRecognizer(tap)
     }

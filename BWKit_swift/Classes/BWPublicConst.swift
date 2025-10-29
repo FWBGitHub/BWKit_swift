@@ -19,7 +19,14 @@ public struct BWConst{
     public static let Library_Path = Home_Path+"/Library"
    
     ///状态栏高度
-    public static let statusBarHeight:CGFloat = (UIDevice.bw.isIPhoneX_After() ? 44.0 : 20.0)
+    public static let statusBarHeight:CGFloat = {
+        if #available(iOS 13.0, *) {
+            return UIApplication.shared.windows.first?.windowScene?
+                           .statusBarManager?.statusBarFrame.height ?? 0
+        }else{
+            return UIApplication.shared.statusBarFrame.size.height
+        }
+    }()
     ///导航栏高度
     public static let navHeight:CGFloat = 44.0
     ///整个头部高度

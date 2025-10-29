@@ -68,17 +68,6 @@ public extension BWSpace where Base:UIDevice{
         return false;
     }
 }
-
-//extension UIDevice {
-//     ///判断当前设备的系统版本是否大于或者等于#version
-//   static func isCompareVersion(_ version: String) -> Bool {
-//        return compare(version: version) != .orderedAscending
-//    }
-//
-//    private func compare(version: String) -> ComparisonResult {
-//        return UIDevice.current.systemVersion.compare(version)
-//    }
-//}
 public extension BWSpace where Base:UIDevice{
     ///获取app版本
     static var appVersion:String{
